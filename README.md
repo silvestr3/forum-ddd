@@ -6,3 +6,4 @@
   - Students
 - Use cases: How the entities interact with each other
   - Answer question
+- Value object: entity properties that have business rules associated to them
