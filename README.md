@@ -13,3 +13,9 @@ A method to convert a real world problem into software
 # Clean Architecture
 
 - Desacoplamento: Cada camada da aplicação deve ser independente das camadas exteriores a ela
+
+## Use cases TODO
+
+- [ ] Escolher melhor resposta
+- [ ] Listar perguntas
+- [ ] Listar respostas
