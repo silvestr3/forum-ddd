@@ -1,5 +1,7 @@
 # DDD - Domain-driven Design
 
+A method to convert a real world problem into software
+
 - Entity: Anything that is factible, that will be maintained/handled by the application
   - Users
   - Questions
@@ -7,3 +9,7 @@
 - Use cases: How the entities interact with each other
   - Answer question
 - Value object: entity properties that have business rules associated to them
+
+# Clean Architecture
+
+- Desacoplamento: Cada camada da aplicação deve ser independente das camadas exteriores a ela
