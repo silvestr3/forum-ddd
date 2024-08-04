@@ -3,6 +3,7 @@ import { InMemoryAnswersRepository } from "test/repositories/in-memory-answers-r
 import { ChooseQuestionBestAnswerUseCase } from "./choose-question-best-answer";
 import { MakeQuestion } from "test/factories/make-question";
 import { MakeAnswer } from "test/factories/make-answer";
+import { NotAllowedError } from "./errors/not-allowed-error";
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository;
 let inMemoryAnswersRepository: InMemoryAnswersRepository;
@@ -44,11 +45,12 @@ describe("Choose question best answer tests", () => {
     await inMemoryQuestionsRepository.create(question);
     await inMemoryAnswersRepository.create(answer);
 
-    await expect(
-      sut.execute({
-        answerId: answer.id.toString(),
-        authorId: "other-user",
-      })
-    ).rejects.toBeInstanceOf(Error);
+    const result = await sut.execute({
+      answerId: answer.id.toString(),
+      authorId: "other-user",
+    });
+
+    expect(result.isLeft()).toBe(true);
+    expect(result.value).toBeInstanceOf(NotAllowedError);
   });
 });
