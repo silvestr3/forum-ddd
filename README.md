@@ -14,8 +14,10 @@ A method to convert a real world problem into software
 
 - Desacoplamento: Cada camada da aplicação deve ser independente das camadas exteriores a ela
 
-## Use cases TODO
+# Aggregate
 
-- [ ] Escolher melhor resposta
-- [ ] Listar perguntas
-- [ ] Listar respostas
+Conjunto de entidades que são manipuladas ao mesmo tempo
+
+# WatchedList
+
+Classe que permite ter informações contidas em uma lista de entidades relacionada à outra entidade
