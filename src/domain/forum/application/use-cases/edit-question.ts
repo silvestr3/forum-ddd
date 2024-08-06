@@ -61,10 +61,10 @@ export class EditQuestionUseCase {
     });
 
     questionAttachmentList.update(questionAttachmentsUpdated);
+    question.attachments = questionAttachmentList;
 
     question.title = title;
     question.content = content;
-    question.attachments = questionAttachmentList;
 
     this.questionsRepository.save(question);
 

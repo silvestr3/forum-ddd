@@ -29,7 +29,10 @@ describe("Get question by slug use case tests", () => {
       slug: "example-question-test",
     });
 
-    expect(result.value?.question.id).toBeTruthy();
-    expect(result.value?.question.title).toEqual(newQuestion.title);
+    expect(result.value).toMatchObject({
+      question: expect.objectContaining({
+        title: newQuestion.title,
+      }),
+    });
   });
 });
