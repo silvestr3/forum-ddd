@@ -1,5 +1,5 @@
 import { UniqueEntityID } from "@/core/entities/unique-entity-id";
-import { FetchQuestionCommentsUseCase } from "./fetch-question-comments";
+import { FetchQuestionCommentsUseCase } from "../fetch-question-comments";
 import { InMemoryQuestioCommentsRepository } from "test/repositories/in-memory-question-comments-repository";
 import { MakeQuestionComment } from "test/factories/make-question-comment";
 

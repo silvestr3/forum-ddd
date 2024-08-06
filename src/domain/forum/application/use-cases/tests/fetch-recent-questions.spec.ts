@@ -1,7 +1,7 @@
 import { InMemoryQuestionsRepository } from "test/repositories/in-memory-questions-repository";
-import { GetQuestionBySlugUseCase } from "./get-question-by-slug";
+import { GetQuestionBySlugUseCase } from "../get-question-by-slug";
 import { MakeQuestion } from "test/factories/make-question";
-import { FetchRecentQuestionsUseCase } from "./fetch-recent-questions";
+import { FetchRecentQuestionsUseCase } from "../fetch-recent-questions";
 import { InMemoryQuestionAttachmentsRepository } from "test/repositories/in-memory-question-attachments-repository";
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository;

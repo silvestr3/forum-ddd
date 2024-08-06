@@ -1,8 +1,8 @@
 import { InMemoryAnswersRepository } from "test/repositories/in-memory-answers-repository";
 import { MakeAnswer } from "test/factories/make-answer";
-import { DeleteAnswerUseCase } from "./delete-answer";
+import { DeleteAnswerUseCase } from "../delete-answer";
 import { UniqueEntityID } from "@/core/entities/unique-entity-id";
-import { NotAllowedError } from "./errors/not-allowed-error";
+import { NotAllowedError } from "../errors/not-allowed-error";
 import { InMemoryAnswerAttachmentsRepository } from "test/repositories/in-memory-answer-attachments-repository";
 import { MakeAnswerAttachment } from "test/factories/make-answer-attachment";
 
