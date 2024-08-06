@@ -21,3 +21,11 @@ Conjunto de entidades que são manipuladas ao mesmo tempo
 # WatchedList
 
 Classe que permite ter informações contidas em uma lista de entidades relacionada à outra entidade
+
+# Subdomains
+
+- Core: The main purpose of the application; what generates the profit
+
+- Supporting: Da suporte para que o core funcione
+
+- Generic: non essential
